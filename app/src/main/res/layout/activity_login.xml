@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context="com.myapplication.activities.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:hint="Username"
+            android:inputType="text"
+            style="@style/EditText"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:hint="Password"
+            style="@style/EditText"
+            android:layout_marginTop="20dp"
+            android:drawableTint="@color/blue"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            style="@style/EditText"
+            android:layout_marginTop="40dp"
+            android:text="  Login  "
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:text="Forget Password?"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:text="Click Here for Register!"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

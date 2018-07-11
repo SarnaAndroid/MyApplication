@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.myapplication.fragments.AddProductFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_product_id"
+            android:hint="Product Id"
+            style="@style/EditText"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txt_product_name"
+            android:hint="Product Name"
+            android:layout_marginTop="20dp"
+            style="@style/EditText"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txt_product_brand"
+            android:hint="Brand"
+            android:maxLines="1"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            style="@style/EditText"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txt_product_quantity"
+            android:hint="Quantity"
+            android:inputType="number"
+            style="@style/EditText"
+            android:layout_marginTop="20dp"
+            android:drawableTint="@color/blue"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txt_product_spherical_power"
+            android:hint="Spherical Power"
+            android:inputType="numberDecimal"
+            style="@style/EditText"
+            android:layout_marginTop="20dp"
+            android:drawableTint="@color/blue"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txt_product_cyclindrical_power"
+            android:hint="Cyclindrical Power"
+            android:inputType="numberDecimal"
+            style="@style/EditText"
+            android:layout_marginTop="20dp"
+            android:drawableTint="@color/blue"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txt_product_min_quantity"
+            android:hint="Product Minimum Quantity"
+            android:inputType="number"
+            style="@style/EditText"
+            android:layout_marginTop="20dp"
+            android:drawableTint="@color/blue"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_add_product"
+            android:layout_width="wrap_content"
+            style="@style/EditText"
+            android:layout_marginTop="25dp"
+            android:text="  Add Product  "
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.myapplication.activities.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:hint="Name"
+            style="@style/EditText"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+           android:id="@+id/et_email"
+            android:hint="Email"
+            android:layout_marginTop="20dp"
+            style="@style/EditText"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_user_name"
+            android:hint="Username"
+            android:layout_marginTop="20dp"
+            android:inputType="text"
+            style="@style/EditText"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            style="@style/EditText"
+            android:layout_marginTop="20dp"
+            android:drawableTint="@color/blue"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_confirm_password"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            style="@style/EditText"
+            android:layout_marginTop="20dp"
+            android:drawableTint="@color/blue"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            style="@style/EditText"
+            android:layout_marginTop="40dp"
+            android:text="  Login  "
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/blue"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:text="Click Here for Login!"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

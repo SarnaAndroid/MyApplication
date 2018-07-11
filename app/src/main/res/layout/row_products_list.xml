@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="15dp"
+    android:layout_margin="4dp"
+    card_view:cardBackgroundColor="#b2ebf2"
+    card_view:cardElevation="6dp">
+
+    <RelativeLayout
+        android:id="@+id/layout_product_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_product_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="id" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Name"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/tv_product_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_product_name"
+            android:text="(Brand)"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/product_spherical_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_brand"
+            android:layout_marginRight="10dp"
+            android:text="Spherical Power:" />
+
+        <TextView
+            android:id="@+id/tv_product_spherical_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_product_brand"
+            android:layout_toRightOf="@+id/product_spherical_power"
+            android:text="1.256" />
+
+        <TextView
+            android:id="@+id/product_cyclindrical_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_spherical_power"
+            android:layout_marginRight="10dp"
+            android:text="Cyclindrical Power:" />
+
+        <TextView
+            android:id="@+id/tv_product_cyclindrical_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_spherical_power"
+            android:layout_toRightOf="@+id/product_cyclindrical_power"
+            android:text="Brand" />
+
+        <TextView
+            android:id="@+id/product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_cyclindrical_power"
+            android:layout_marginRight="10dp"
+            android:text="Qty:" />
+
+        <TextView
+            android:id="@+id/tv_product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_cyclindrical_power"
+            android:layout_toRightOf="@+id/product_quantity"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/product_min_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_cyclindrical_power"
+            android:layout_toLeftOf="@id/tv_product_min_quantity"
+            android:text="Min. Qty:  " />
+
+        <TextView
+            android:id="@+id/tv_product_min_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_product_cyclindrical_power"
+            android:text="5"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
