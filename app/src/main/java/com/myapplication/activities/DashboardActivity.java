@@ -1,5 +1,6 @@
 package com.myapplication.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -20,6 +21,7 @@ import com.myapplication.R;
 import com.myapplication.fragments.BillFragment;
 import com.myapplication.fragments.AddProductFragment;
 import com.myapplication.fragments.ProductsListFragment;
+import com.myapplication.utils.CurrentSession;
 
 public class DashboardActivity extends AppCompatActivity
         implements   NavigationView.OnNavigationItemSelectedListener {
@@ -115,6 +117,9 @@ public class DashboardActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            new CurrentSession(this).clearCurrentData();
+            Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
+            startActivity(intent);
             return true;
         }
 

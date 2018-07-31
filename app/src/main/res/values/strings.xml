@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Kochar Opticals</string>
     <string name="title_activity_dashboard">Dashboard</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -14,4 +14,6 @@
     <string name="bill">Bill</string>
     <string name="add_products">Add Products</string>
     <string name="product_list">Products</string>
+    <string name="user_type_error">Please Select User type</string>
+    <string name="action_Logout">Logout</string>
 </resources>
